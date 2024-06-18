@@ -1,0 +1,101 @@
+body {
+    background-image: url('./images/background.svg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+}
+.homeContainer {
+  margin: 0 100px; 
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.welcome {
+  margin-right: 5%;
+}
+
+.askQuestionLink {
+  display: block;
+  margin-bottom: 20px;
+  background-color: #516cf0;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  height: 35px;
+  width: 250px;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px 20px;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+.askQuestionLink:hover {
+  text-decoration: underline;
+  background: orange;
+}
+
+.questionsList {
+  margin-left: 50px;
+  text-decoration: none;
+}
+
+.question {
+  background-color: rgb(226, 208, 211);
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.question h3 a {
+  color: #000;
+  text-decoration: none;
+}
+
+.question h3 {
+  margin: 10px 0; 
+  margin-top: 50px;
+}
+
+.questionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.usernameLink {
+  display: flex;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.icon {
+  font-size: 100px;
+  margin-right: 50px;
+}
+
+.questionHeader > p {
+  width: 10%;
+  flex-grow: 1;
+}
+
+.toggleButton {
+  background: none;
+  border: none;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
