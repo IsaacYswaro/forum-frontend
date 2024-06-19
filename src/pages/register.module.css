@@ -1,15 +1,22 @@
+body {
+    background-image: url('../pages/images/background.svg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+}
 .container {
   display: flex;
   justify-content: center;
   align-items: flex-start; 
   height: 90vh;
-  padding: 20px;
+  padding: 30px;
 }
 
 .formContainer {
   display: flex;
   flex-direction: column;
-  margin-right: 60px; 
+  margin-right: 30px; 
+  max-width: 500px;
 }
 .join_login {
   display: flex;
@@ -29,7 +36,7 @@
 }
 
 .join_login .login:hover {
-  text-decoration: underline; /* Add underline on hover */
+  text-decoration: underline; 
 }
 .terms {
   display: flex;

@@ -75,22 +75,19 @@ function Login() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non
             urna eu libero dapibus cursus. Nullam nec enim lacus. Duis
             imperdiet, nisi eget ullamcorper vehicula, eros leo facilisis mi,
-            sed dapibus metus est eget risus. Vestibulum ante ipsum primis in
-            faucibus orci luctus et ultrices posuere cubilia curae.
+            sed dapibus metus est eget risus. 
           </p>
           <p>
             Phasellus euismod ligula at mauris ullamcorper, vel sagittis velit
             lacinia. Nulla facilisi. Aliquam erat volutpat. Ut ut ex odio.
             Mauris placerat, libero a tincidunt pretium, ligula nisl tincidunt
-            nunc, at fringilla elit magna nec dolor. Praesent ac neque lorem.
-            Vivamus imperdiet sapien non ipsum egestas.
+            nunc, at fringilla elit magna nec dolor. 
           </p>
           <p>
             Nam consectetur libero eu urna tincidunt, a iaculis massa
             pellentesque. Suspendisse potenti. Sed in orci sed orci tempor
             bibendum ac et odio. Proin vel justo non libero vehicula tempor id
-            sit amet libero. Donec tincidunt nisl vitae nulla vehicula, id
-            cursus arcu fermentum.
+            sit amet libero.
           </p>
         </div>
         <div className={classes.how_it_works}>
