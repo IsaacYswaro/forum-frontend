@@ -100,3 +100,14 @@ a:hover {
   margin-top: 10px;
   cursor: pointer;
 }
+ @media (max-width: 768px) {
+  .container {
+    display: flex;
+    justify-content: center;
+  align-items: center;
+  }
+  .aboutContainer {
+    display: none;
+  }
+  
+ }

@@ -11,11 +11,16 @@ const Footer = () => {
   return (
     <footer className={classes.footer}>
       <div className={classes.left}>
-        <img src={require("./image/download.png")} alt="Evangadi Networks Logo" />
+        <img
+          src={require("./image/download.png")}
+          alt="Evangadi Networks Logo"
+        />
         <div className={classes.icons}>
           <ul>
             <li>
-              <FaFacebookF />
+              <a href="">
+                <FaFacebookF />
+              </a>
             </li>
             <li>
               <FaInstagram />

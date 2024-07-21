@@ -99,3 +99,10 @@ body {
   display: flex;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .askQuestionLink {
+    margin-right: 50px;
+      margin-left: 5px;
+
+  }
+}

@@ -21,7 +21,10 @@ function Header() {
         <Link to="/" className={classes.navLink}>
           Home
         </Link>
-        <Link to="#" className={classes.navLink}>
+        <Link
+          to="https://www.evangadi.com/explained/"
+          className={classes.navLink}
+        >
           How it Works
         </Link>
         {user.username ? (

@@ -1,9 +1,9 @@
 import React, { createContext, useEffect, useState } from "react";
-import "./index.css"
+import "./index.css";
 import { Route, Routes, useNavigate } from "react-router-dom";
 import Home from "./pages/Home";
 import AskQuestion from "./Components/AskQuestion";
-import Answer from "./Components/Answer"
+import Answer from "./Components/Answer";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Layout from "./Components/Layout";
@@ -14,35 +14,32 @@ export const AppState = createContext();
 
 function App() {
   const [user, setUser] = useState({});
-
   const token = localStorage.getItem("token");
   const navigate = useNavigate();
 
-  async function checkuser() {
+  async function checkUser() {
     try {
       const { data } = await axios.get("/users/check", {
         headers: { Authorization: "Bearer " + token },
       });
       setUser(data);
     } catch (error) {
-      console.log(error);
+      console.error("Error checking user:", error);
       navigate("/login");
     }
   }
 
   useEffect(() => {
     if (token) {
-      checkuser();
+      checkUser();
     }
   }, [token]);
 
-
- const handleLogout = () => {
-   localStorage.removeItem("token");
-   setUser({});
-   navigate("/login");
- };
-
+  const handleLogout = () => {
+    localStorage.removeItem("token");
+    setUser({});
+    navigate("/login");
+  };
 
   return (
     <AppState.Provider value={{ user, setUser, handleLogout }}>
