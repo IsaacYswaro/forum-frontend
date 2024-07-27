@@ -5,23 +5,18 @@ import classes from "./answer.module.css";
 
 function Answer() {
   const { questionid } = useParams();
-  console.log("Question ID from useParams:", questionid);
   const token = localStorage.getItem("token");
   const config = {
     headers: { Authorization: `Bearer ${token}` },
   };
   const [answer, setAnswer] = useState("");
   const [question, setQuestion] = useState(null);
-  const answersRef = useRef([]);
-  const [state, setState] = useState(false);
+  const [answers, setAnswers] = useState([]);
 
   useEffect(() => {
-    console.log("Question ID from params in useEffect:", questionid);
     if (questionid) {
       fetchQuestion();
       fetchAnswers();
-    } else {
-      console.error("Question ID is undefined");
     }
   }, [questionid]);
 
@@ -31,7 +26,6 @@ function Answer() {
         `/questions/questions/${questionid}`,
         config
       );
-      console.log("Fetched question:", response.data);
       setQuestion(response.data[0]); // Access the first element of the array
     } catch (error) {
       console.error("Error fetching question:", error);
@@ -41,9 +35,7 @@ function Answer() {
   const fetchAnswers = async () => {
     try {
       const response = await axios.get(`/answers/${questionid}`, config);
-      console.log("Fetched answers:", response.data);
-      answersRef.current = response.data;
-      setState((prev) => !prev);
+      setAnswers(response.data);
     } catch (error) {
       console.error("Error fetching answers:", error);
     }
@@ -67,8 +59,8 @@ function Answer() {
       setAnswer("");
       fetchAnswers();
     } catch (error) {
-      alert(error?.response?.data?.msg);
-      console.log(error.response.data);
+      alert(error?.response?.data?.msg || "Something went wrong.");
+      console.error(error.response?.data);
     }
   };
 
@@ -87,8 +79,8 @@ function Answer() {
       )}
       <div className={classes.answersList}>
         <h2>Answers from the Community</h2>
-        {answersRef.current.length > 0 ? (
-          answersRef.current.map((ans, index) => (
+        {answers.length > 0 ? (
+          answers.map((ans, index) => (
             <div key={index} className={classes.answer}>
               <p>{ans.answer}</p>
               <p>
