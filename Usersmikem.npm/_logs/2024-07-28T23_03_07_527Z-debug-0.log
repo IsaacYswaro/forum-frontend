@@ -7,7 +7,7 @@
 6 silly config load:file:C:\Users\mikem\.npm-global\etc\npmrc
 7 verbose title npm start
 8 verbose argv "start"
-9 verbose logfile logs-max:10 dir:C:\Users\mikem\Desktop\Evangadi\Final-Projects\Functional-Scope-and-Design\Evangadi-Forum\client\Usersmikem.npm\_logs\2024-07-24T23_31_00_342Z-
-10 verbose logfile C:\Users\mikem\Desktop\Evangadi\Final-Projects\Functional-Scope-and-Design\Evangadi-Forum\client\Usersmikem.npm\_logs\2024-07-24T23_31_00_342Z-debug-0.log
+9 verbose logfile logs-max:10 dir:C:\Users\mikem\Desktop\Evangadi\Final-Projects\Functional-Scope-and-Design\Evangadi-Forum\client\Usersmikem.npm\_logs\2024-07-28T23_03_07_527Z-
+10 verbose logfile C:\Users\mikem\Desktop\Evangadi\Final-Projects\Functional-Scope-and-Design\Evangadi-Forum\client\Usersmikem.npm\_logs\2024-07-28T23_03_07_527Z-debug-0.log
 11 silly logfile start cleaning logs, removing 2 files
 12 silly logfile done cleaning log files

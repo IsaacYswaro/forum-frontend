@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import axios from "../axiosConfig";
 import classes from "./answer.module.css";
@@ -22,10 +22,7 @@ function Answer() {
 
   const fetchQuestion = async () => {
     try {
-      const response = await axios.get(
-        `/questions/questions/${questionid}`,
-        config
-      );
+      const response = await axios.get(`/questions/${questionid}`, config);
       setQuestion(response.data[0]); // Access the first element of the array
     } catch (error) {
       console.error("Error fetching question:", error);
