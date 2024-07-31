@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosBase = axios.create({
-  baseURL: "https://evangadi-backend-6hkj.onrender.com",
+  baseURL: process.env.REACT_APP_API_BASE_URL,
 });
 
 export default axiosBase;

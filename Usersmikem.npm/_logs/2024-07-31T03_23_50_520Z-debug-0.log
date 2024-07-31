@@ -5,10 +5,10 @@
 4 silly config load:file:C:\Users\mikem\Desktop\Evangadi\Final-Projects\Functional-Scope-and-Design\Evangadi-Forum\client\.npmrc
 5 silly config load:file:C:\Users\mikem\.npmrc
 6 silly config load:file:C:\Users\mikem\.npm-global\etc\npmrc
-7 verbose title npm run build
-8 verbose argv "run" "build"
-9 verbose logfile logs-max:10 dir:C:\Users\mikem\Desktop\Evangadi\Final-Projects\Functional-Scope-and-Design\Evangadi-Forum\client\Usersmikem.npm\_logs\2024-07-31T03_06_49_692Z-
-10 verbose logfile C:\Users\mikem\Desktop\Evangadi\Final-Projects\Functional-Scope-and-Design\Evangadi-Forum\client\Usersmikem.npm\_logs\2024-07-31T03_06_49_692Z-debug-0.log
+7 verbose title npm run deploy
+8 verbose argv "run" "deploy"
+9 verbose logfile logs-max:10 dir:C:\Users\mikem\Desktop\Evangadi\Final-Projects\Functional-Scope-and-Design\Evangadi-Forum\client\Usersmikem.npm\_logs\2024-07-31T03_23_50_520Z-
+10 verbose logfile C:\Users\mikem\Desktop\Evangadi\Final-Projects\Functional-Scope-and-Design\Evangadi-Forum\client\Usersmikem.npm\_logs\2024-07-31T03_23_50_520Z-debug-0.log
 11 silly logfile start cleaning logs, removing 2 files
 12 silly logfile done cleaning log files
 13 verbose cwd C:\Users\mikem\Desktop\Evangadi\Final-Projects\Functional-Scope-and-Design\Evangadi-Forum\client

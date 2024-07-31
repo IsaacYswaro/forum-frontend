@@ -1,16 +1,17 @@
+// src/Components/AskQuestion.js
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "../axiosConfig";
 import classes from "./ask.module.css";
 import { TiArrowRight } from "react-icons/ti";
 
-
 function AskQuestion() {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const navigate = useNavigate();
-const token = localStorage.getItem("token");
-  async function handleSubmit(e) {
+  const token = localStorage.getItem("token");
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (!title || !description) {
@@ -19,7 +20,6 @@ const token = localStorage.getItem("token");
     }
 
     try {
-      
       const config = {
         headers: { Authorization: `Bearer ${token}` },
       };
@@ -27,10 +27,10 @@ const token = localStorage.getItem("token");
       alert("Question submitted successfully.");
       navigate("/");
     } catch (error) {
-      alert(error?.response?.data?.msg);
-      console.log(error.response.data);
+      alert(error?.response?.data?.msg || "Something went wrong.");
+      console.error(error.response?.data);
     }
-  }
+  };
 
   return (
     <section className={classes.askQuestion}>
