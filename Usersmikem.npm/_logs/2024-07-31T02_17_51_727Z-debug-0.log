@@ -5,13 +5,13 @@
 4 silly config load:file:c:\Users\mikem\Desktop\Evangadi\Final-Projects\Functional-Scope-and-Design\Evangadi-Forum\client\.npmrc
 5 silly config load:file:C:\Users\mikem\.npmrc
 6 silly config load:file:C:\Users\mikem\.npm-global\etc\npmrc
-7 verbose title npm view web-vitals description dist-tags.latest homepage version time
-8 verbose argv "view" "--json" "--" "web-vitals" "description" "dist-tags.latest" "homepage" "version" "time"
-9 verbose logfile logs-max:10 dir:C:\Users\mikem\Desktop\Evangadi\Final-Projects\Functional-Scope-and-Design\Evangadi-Forum\client\Usersmikem.npm\_logs\2024-07-25T01_07_07_448Z-
-10 verbose logfile C:\Users\mikem\Desktop\Evangadi\Final-Projects\Functional-Scope-and-Design\Evangadi-Forum\client\Usersmikem.npm\_logs\2024-07-25T01_07_07_448Z-debug-0.log
+7 verbose title npm view @testing-library/jest-dom description dist-tags.latest homepage version time
+8 verbose argv "view" "--json" "--" "@testing-library/jest-dom" "description" "dist-tags.latest" "homepage" "version" "time"
+9 verbose logfile logs-max:10 dir:C:\Users\mikem\Desktop\Evangadi\Final-Projects\Functional-Scope-and-Design\Evangadi-Forum\client\Usersmikem.npm\_logs\2024-07-31T02_17_51_727Z-
+10 verbose logfile C:\Users\mikem\Desktop\Evangadi\Final-Projects\Functional-Scope-and-Design\Evangadi-Forum\client\Usersmikem.npm\_logs\2024-07-31T02_17_51_727Z-debug-0.log
 11 silly logfile start cleaning logs, removing 2 files
 12 silly logfile done cleaning log files
-13 http fetch GET 200 https://registry.npmjs.org/web-vitals 310ms (cache miss)
+13 http fetch GET 200 https://registry.npmjs.org/@testing-library%2fjest-dom 296ms (cache miss)
 14 verbose cwd c:\Users\mikem\Desktop\Evangadi\Final-Projects\Functional-Scope-and-Design\Evangadi-Forum\client
 15 verbose os Windows_NT 10.0.22631
 16 verbose node v20.11.1
