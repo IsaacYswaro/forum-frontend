@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/forum-frontend/static/css/main.91c15836.css",
-    "main.js": "/forum-frontend/static/js/main.adc6bb42.js",
+    "main.js": "/forum-frontend/static/js/main.cb3ffd33.js",
     "static/media/background.svg": "/forum-frontend/static/media/background.192609b8540a56a36a47.svg",
     "index.html": "/forum-frontend/index.html",
     "main.91c15836.css.map": "/forum-frontend/static/css/main.91c15836.css.map",
-    "main.adc6bb42.js.map": "/forum-frontend/static/js/main.adc6bb42.js.map"
+    "main.cb3ffd33.js.map": "/forum-frontend/static/js/main.cb3ffd33.js.map"
   },
   "entrypoints": [
     "static/css/main.91c15836.css",
-    "static/js/main.adc6bb42.js"
+    "static/js/main.cb3ffd33.js"
   ]
 }
