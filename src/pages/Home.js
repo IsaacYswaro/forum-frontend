@@ -10,7 +10,7 @@ import { VscAccount } from "react-icons/vsc";
 function Home() {
   const [questions, setQuestions] = useState([]);
   const [showDescription, setShowDescription] = useState({});
-  const { user, setUser } = useContext(AppState);
+  const { user } = useContext(AppState);
 
   useEffect(() => {
     fetchQuestions();
@@ -22,7 +22,7 @@ function Home() {
       const config = {
         headers: { Authorization: `Bearer ${token}` },
       };
-      const response = await axios.get("/questions", config);
+      const response = await axios.get("/questions", config); 
       setQuestions(response.data);
     } catch (error) {
       console.error("Error fetching questions:", error);
@@ -35,8 +35,6 @@ function Home() {
       [index]: !prevState[index],
     }));
   };
-
-  console.log(questions);
 
   return (
     <div className={classes.homeContainer}>
@@ -61,8 +59,7 @@ function Home() {
                 to={`/answers/${question.questionid}`}
                 className={classes.usernameLink}
               >
-                <VscAccount 
-                className={classes.icon} />
+                <VscAccount className={classes.icon} />
                 {question.username}
               </Link>
               <button

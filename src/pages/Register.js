@@ -30,9 +30,8 @@ function Register() {
       alert("Please provide all required information.");
       return;
     }
-
     try {
-      await axios.post("/users/register", {
+      await axios.post("/api/users/register", {
         username: usernameValue,
         firstname: firstValue,
         lastname: lastValue,
